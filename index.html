@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="index.js"></script>
+
+    <link
+      rel="shortcut icon"
+      href="images\Amazon-Kindle-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <title>Job Application</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="content">
+        <h1>Job Application <span id="span">(Web)</span></h1>
+        <form action="">
+          <div id="form-container">
+            <div id="form-input">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="Enter first name"
+              />
+            </div>
+
+            <div id="form-input">
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                placeholder="Enter last name"
+              />
+            </div>
+
+            <div id="form-input">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Email.."
+              />
+            </div>
+            <div id="form-input">
+              <label for="job-role">Job Role</label>
+              <select name="job-role" id="job-role">
+                <option value="">Select Job Role</option>
+                <option value="frontdev">Frontend Developer</option>
+                <option value="backdedv">Backend Developer</option>
+                <option value="fulldev">Fullstack Developer</option>
+                <option value="androiddev">Android Developer</option>
+                <option value="iosdev">IOS Developer</option>
+              </select>
+            </div>
+
+            <div id="address-in">
+              <label for="address">Address</label>
+              <textarea
+                name="address"
+                id="address"
+                cols="50"
+                rows="5"
+                placeholder="Enter Your Address..."
+              ></textarea>
+            </div>
+
+            <div id="form-input">
+              <label for="city">City</label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Enter City Name.."
+              />
+            </div>
+
+            <div id="form-input">
+              <label for="pincode">Pincode</label>
+              <input
+                type="number"
+                name="pincode"
+                id="pincode"
+                placeholder="Enter Pincode.."
+              />
+            </div>
+
+            <div id="form-input">
+              <label for="date">Date</label>
+              <input type="date" name="date" id="date" value="1999-01-01" />
+            </div>
+
+            <div id="form-input">
+              <label for="file">Upload Your CV</label>
+              <input type="file" name="file" id="file" />
+            </div>
+          </div>
+
+          <div class="button-container">
+            <button type="submit" onclick="handleApplyClick()">
+              Apply Now
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
